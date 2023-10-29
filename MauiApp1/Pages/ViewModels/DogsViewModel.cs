@@ -48,7 +48,7 @@ namespace MauiApp1.Pages.ViewModels
                
 
             }
-            catch (Exception ex)
+            catch 
             {
                 IsLoading = false;//hide load on error 
                 await App.Current.MainPage.DisplayAlert("Error","","Ok");

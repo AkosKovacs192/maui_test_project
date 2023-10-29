@@ -1,4 +1,5 @@
-﻿using MauiApp1.Pages.ViewModels;
+﻿using CommunityToolkit.Maui;
+using MauiApp1.Pages.ViewModels;
 using MauiApp1.Pages.Views;
 using MauiApp1.Services;
 using Microsoft.Extensions.Logging;
@@ -17,10 +18,13 @@ namespace MauiApp1
                     fonts.AddFont("Joyful.otf", "joyful");
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-                });
+                })
+                .UseMauiCommunityToolkit()
+                .UseMauiMaps();
+               
 
 #if DEBUG
-		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             //httpclient needs to be singleton
