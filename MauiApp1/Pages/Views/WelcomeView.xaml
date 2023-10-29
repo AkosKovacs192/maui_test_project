@@ -15,7 +15,7 @@
         </LinearGradientBrush>
     </ContentPage.Background>
 
-    <VerticalStackLayout x:DataType="{DataTemplate vm:WelcomeViewModel}">
+    <VerticalStackLayout x:DataType="vm:WelcomeViewModel">
         <Label
             HorizontalOptions="Center"
             Text="Welcome to .NET MAUI!"

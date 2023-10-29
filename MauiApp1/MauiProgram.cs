@@ -27,7 +27,7 @@ namespace MauiApp1
             builder.Services.AddSingleton<MyHttpClient>();
 
 
-            //want these transient as i want to load new image, and new locaiton check every time page loads
+            
             builder.Services.AddTransient<DogsView>();
             builder.Services.AddTransient<DogsViewModel>();
             builder.Services.AddTransient<WelcomeView>();

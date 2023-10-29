@@ -51,10 +51,13 @@
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\Joyful.otf" />
 	  <None Remove="Resources\Images\dog_api_logo.svg" />
+	  <None Remove="Resources\Images\reload_icon.svg" />
 	  <None Remove="Resources\Images\welcome_icon.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui" Version="6.0.0" />
+		<PackageReference Include="CommunityToolkit.Maui.Core" Version="6.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
