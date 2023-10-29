@@ -11,6 +11,7 @@ namespace MauiApp1
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
+                    fonts.AddFont("Joyful.otf", "joyful");
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });

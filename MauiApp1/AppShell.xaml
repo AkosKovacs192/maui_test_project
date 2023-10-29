@@ -4,11 +4,21 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MauiApp1"
+    xmlns:views="clr-namespace:MauiApp1.Pages.Views"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+
+
+    <TabBar>
+        <!--  Title="Welcome"  -->
+        <Tab Icon="welcome_icon.svg">
+
+            <ShellContent ContentTemplate="{DataTemplate views:WelcomeView}" />
+        </Tab>
+        <!--  Title="Dogs"  -->
+        <Tab Icon="dog_api_logo.svg">
+            <ShellContent ContentTemplate="{DataTemplate views:DogView}" />
+        </Tab>
+    </TabBar>
 
 </Shell>

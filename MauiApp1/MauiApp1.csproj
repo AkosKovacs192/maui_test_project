@@ -49,7 +49,26 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\Joyful.otf" />
+	  <None Remove="Resources\Images\dog_api_logo.svg" />
+	  <None Remove="Resources\Images\welcome_icon.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Pages\ViewModels\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Pages\Views\DogView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\Views\WelcomeView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
