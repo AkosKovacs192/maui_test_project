@@ -1,4 +1,7 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using MauiApp1.Pages.ViewModels;
+using MauiApp1.Pages.Views;
+using MauiApp1.Services;
+using Microsoft.Extensions.Logging;
 
 namespace MauiApp1
 {
@@ -19,6 +22,16 @@ namespace MauiApp1
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
+
+            //httpclient needs to be singleton
+            builder.Services.AddSingleton<MyHttpClient>();
+
+
+            //want these transient as i want to load new image, and new locaiton check every time page loads
+            builder.Services.AddTransient<DogsView>();
+            builder.Services.AddTransient<DogsViewModel>();
+            builder.Services.AddTransient<WelcomeView>();
+            builder.Services.AddTransient<WelcomeViewModel>();
 
             return builder.Build();
         }

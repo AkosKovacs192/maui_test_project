@@ -17,7 +17,7 @@
         </Tab>
         <!--  Title="Dogs"  -->
         <Tab Icon="dog_api_logo.svg">
-            <ShellContent ContentTemplate="{DataTemplate views:DogView}" />
+            <ShellContent ContentTemplate="{DataTemplate views:DogsView}" />
         </Tab>
     </TabBar>
 

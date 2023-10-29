@@ -59,11 +59,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Pages\ViewModels\" />
+	  <Compile Update="Pages\Views\DogsView.xaml.cs">
+	    <DependentUpon>DogsView.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Pages\Views\DogView.xaml">
+	  <MauiXaml Update="Pages\Views\DogsView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\Views\WelcomeView.xaml">
